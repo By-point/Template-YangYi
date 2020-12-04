@@ -4,18 +4,14 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&amp;family=Noto+Sans+TC:wght@300&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&amp;family=Noto+Serif+TC:wght@500;600&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&amp;family=Noto+Sans+TC:wght@300&amp;family=Noto+Serif+TC:wght@300;400&amp;display=swap"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&amp;family=Noto+Serif+TC:wght@400;500;600&amp;family=Noto+Sans+TC:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="../../assets/stylesheets/all.css"/>
   </head>
   <body>
     <header class="header jq-header">
       <div class="header_wrap">
-        <h1 class="header-logo"><a href="../index/index.html"> 
+        <h1 class="header-logo gs-header-logo"><a href="../index/index.html"> 
             <picture class="phone-hide">
               <source srcset="../../assets/images/icon/mob-logo.svg" media="(max-width: 768px)"/><img src="../../assets/images/icon/text-logo.svg" alt="揚藝美學診所"/>
             </picture>
@@ -110,18 +106,24 @@
             </svg></a></h1>
         <nav class="header-nav jq-header-nav">
           <ul class="header-nav-list">
-            <li class="header-nav-list_item"><a href="../new/new.html">最新消息</a></li>
-            <li class="header-nav-list_item"><a href="../about/about.html">關於揚藝</a></li>
-            <li class="header-nav-list_item"><a href="../worry/worry.html">我的煩惱</a></li>
-            <li class="header-nav-list_item"><a href="../advisory/advisory.html">諮詢流程</a></li>
+            <li class="header-nav-list_item pad-show"><a class="c_hamburger-rwd" href="#">
+                <div class="c_hamburger jq-hamburger">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </div></a></li>
+            <li class="header-nav-list_item gs-header_nav-item jq-header-news"><a href="../new/new.html">最新消息</a></li>
+            <li class="header-nav-list_item gs-header_nav-item jq-header-about"><a href="../about/about.html">關於揚藝</a></li>
+            <li class="header-nav-list_item gs-header_nav-item jq-header-worry"><a href="../worry/worry.html">我的煩惱</a></li>
+            <li class="header-nav-list_item gs-header_nav-item jq-header-advisory"><a href="../advisory/advisory.html">諮詢流程</a></li>
             <li class="header-nav-list_item rwd-language"><span>語言 :</span>
               <div class="language"><a class="current" href="../index/index.html">繁中</a><a href="../index/index.html">简中</a><a href="../index/index.html">EN</a></div>
             </li>
           </ul>
         </nav>
         <div class="header-btn">
-          <div class="search jq-search"><span class="search-btn jq-search-open-btn">
-              <svg class="phone-hide" xmlns="http://www.w3.org/2000/svg" width="20.55" height="22.629" viewBox="0 0 20.55 22.629">
+          <form class="search jq-search"><span class="search-btn jq-search-open-btn">
+              <svg class="phone-hide gs-header-search" xmlns="http://www.w3.org/2000/svg" width="20.55" height="22.629" viewBox="0 0 20.55 22.629">
                 <g fill="none" stroke="#050a23" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5px">
                   <g stroke-linejoin="round" transform="translate(-1635 -61.027) translate(1635 61.027)">
                     <ellipse cx="10" cy="10.039" stroke="none" rx="10" ry="10.039"></ellipse>
@@ -142,13 +144,13 @@
             <div class="input-block"><span class="close-btn jq-search-close-btn"></span>
               <input type="text" placeholder="輸入想搜尋的文字"/>
             </div>
-          </div>
+          </form>
           <div class="c_hamburger jq-hamburger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
           </div>
-          <div class="language"><a class="cn" href="#">简中</a><a class="en" href="#">EN</a></div>
+          <div class="language gs-header-search"><a class="cn" href="#">简中</a><a class="en" href="#">EN</a></div>
         </div>
       </div>
     </header>
@@ -160,7 +162,7 @@
             <time class="time">2020-2-25</time>
             <div class="u_flex"><span class="school">揚藝美力學堂</span>
               <p class="name">賴慶鴻醫師</p>
-            </div><a class="icon" href="#"><img src="../../assets/images/icon/update.svg" alt=""/></a>
+            </div><a class="icon" href="#"><img class="phone-hide" src="../../assets/images/icon/update.svg" alt=""/><img class="phone-show" src="../../assets/images/icon/details-upload-icon.svg" alt=""/></a>
           </div>
         </section>
         <article class="details-article">
@@ -192,6 +194,77 @@
             <p>✥ 任何手術或療程皆會有其醫療風險，實際療效會依個人情形而有不同，以上資訊係做為診療的輔助說明，供參考；歡迎預約諮詢前往揚藝美學診所，並接受醫師親自診斷後，再行確認相關治療是否適用於自己。</p>
           </div>
         </article>
+        <section class="details_form advisory-menu">
+          <div class="advisory-menu_wrap">
+            <h1 class="c_title-l">有什麼問題嗎? 歡迎來諮詢我們!</h1>
+            <article class="advisory-menu_item advisory-form">
+              <div class="u_flex"> 
+                <div class="content">
+                  <div class="content_wrap">
+                    <form action="" method="post">
+                      <div class="form-group input-name">
+                        <label for="name">姓名</label>
+                        <input type="text" name="name"/>
+                      </div>
+                      <div class="form-group input-gender"><span class="gender-title">性別</span>
+                        <div class="radio">
+                          <div class="group">
+                            <input id="male" type="radio" name="gender" value="female"/>
+                            <label for="male">女</label>
+                          </div>
+                          <div class="group">
+                            <input id="female" type="radio" name="gender" value="male"/>
+                            <label for="female">男</label>
+                          </div>
+                          <div class="group">
+                            <input id="other" type="radio" name="gender" value="other"/>
+                            <label for="other">其他</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group input-name">
+                        <label for="tel">電話</label>
+                        <input id="tel" type="text" name="tel"/>
+                      </div>
+                      <div class="form-group input-name">
+                        <label for="line">Line ID</label>
+                        <input id="line" type="text" name="line"/>
+                      </div>
+                      <div class="form-group"><span class="gender-title">您的困擾</span>
+                        <div class="radio jq-input-worry">
+                          <div class="group">
+                            <input id="worry1" type="radio" name="worry" value="煩惱詢問"/>
+                            <label for="worry1">煩惱詢問</label>
+                          </div>
+                          <div class="group">
+                            <input id="worry2" type="radio" name="worry" value="手術諮詢"/>
+                            <label for="worry2">手術諮詢</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group input-radio">
+                        <label for="items">諮詢項目</label>
+                        <div class="u_flex">
+                          <select class="advisory-item jq-main-items" id="itemsMain" name="items" disabled="disabled">
+                            <option selected="selected" disabled="disabled" style="display: none" value="">請先選擇您的困擾</option>
+                          </select>
+                          <select class="advisory-item-details jq-detail-items" id="itemsDetail" name="items-details" disabled="disabled">
+                            <option selected="selected" disabled="disabled" style="display: none" value="">--------------</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group input-textarea">
+                        <label for="detail">詳述問題</label>
+                        <textarea name="detail" cols="50" rows="15"></textarea>
+                      </div>
+                      <input class="c_button-bg-color" type="submit" value="送出表單"/>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
       </div>
       <div class="else-article">
         <div class="else-article_wrap new l-container">
@@ -199,7 +272,7 @@
           <div class="menu">
             <ul class="menu-list">
               <li class="menu-list_item"><a class="c_card" href="../details/details.html">
-                  <div class="c_card_img"><img src="../../assets/images/new/new2.png" alt=""/></div>
+                  <div class="c_card_img hover-rotate"><img src="../../assets/images/new/new2.png" alt=""/></div>
                   <div class="c_card_body">
                     <h3 class="c_card_title">眼周3大常見問題，帶你找回大萌眼 | 怎麼對症下藥</h3>
                     <div class="u_flex">
@@ -208,7 +281,7 @@
                     </div>
                   </div></a></li>
               <li class="menu-list_item"><a class="c_card" href="../details/details.html">
-                  <div class="c_card_img"><img src="../../assets/images/new/new3.png" alt=""/></div>
+                  <div class="c_card_img hover-rotate"><img src="../../assets/images/new/new3.png" alt=""/></div>
                   <div class="c_card_body">
                     <h3 class="c_card_title">鼻子美學研討會 | 這3種方法你一定要知道</h3>
                     <div class="u_flex">
@@ -217,7 +290,7 @@
                     </div>
                   </div></a></li>
               <li class="menu-list_item"><a class="c_card" href="../details/details.html">
-                  <div class="c_card_img"><img src="../../assets/images/new/new8.png" alt=""/></div>
+                  <div class="c_card_img hover-rotate"><img src="../../assets/images/new/new8.png" alt=""/></div>
                   <div class="c_card_body">
                     <h3 class="c_card_title">為什麼皮秒雷射會反黑？這3點是關鍵</h3>
                     <div class="u_flex">
@@ -306,8 +379,11 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="../../assets/javascripts/all.js"></script>
   </body>
 </html>

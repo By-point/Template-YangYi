@@ -4,18 +4,15 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&amp;family=Noto+Sans+TC:wght@300&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&amp;family=Noto+Serif+TC:wght@500;600&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&amp;family=Noto+Sans+TC:wght@300&amp;family=Noto+Serif+TC:wght@300;400&amp;display=swap"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&amp;family=Noto+Serif+TC:wght@400;500;600&amp;family=Noto+Sans+TC:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="../../assets/stylesheets/all.css"/>
   </head>
-  <body>
+  <body id="home">
+    <div class="an-progress"><span class="an-progress-bar"></span><span class="an-progress-text">0</span></div>
     <header class="header jq-header">
       <div class="header_wrap">
-        <h1 class="header-logo"><a href="../index/index.html"> 
+        <h1 class="header-logo gs-header-logo"><a href="../index/index.html"> 
             <picture class="phone-hide">
               <source srcset="../../assets/images/icon/mob-logo.svg" media="(max-width: 768px)"/><img src="../../assets/images/icon/text-logo.svg" alt="揚藝美學診所"/>
             </picture>
@@ -110,18 +107,24 @@
             </svg></a></h1>
         <nav class="header-nav jq-header-nav">
           <ul class="header-nav-list">
-            <li class="header-nav-list_item"><a href="../new/new.html">最新消息</a></li>
-            <li class="header-nav-list_item"><a href="../about/about.html">關於揚藝</a></li>
-            <li class="header-nav-list_item"><a href="../worry/worry.html">我的煩惱</a></li>
-            <li class="header-nav-list_item"><a href="../advisory/advisory.html">諮詢流程</a></li>
+            <li class="header-nav-list_item pad-show"><a class="c_hamburger-rwd" href="#">
+                <div class="c_hamburger jq-hamburger">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </div></a></li>
+            <li class="header-nav-list_item gs-header_nav-item jq-header-news"><a href="../new/new.html">最新消息</a></li>
+            <li class="header-nav-list_item gs-header_nav-item jq-header-about"><a href="../about/about.html">關於揚藝</a></li>
+            <li class="header-nav-list_item gs-header_nav-item jq-header-worry"><a href="../worry/worry.html">我的煩惱</a></li>
+            <li class="header-nav-list_item gs-header_nav-item jq-header-advisory"><a href="../advisory/advisory.html">諮詢流程</a></li>
             <li class="header-nav-list_item rwd-language"><span>語言 :</span>
               <div class="language"><a class="current" href="../index/index.html">繁中</a><a href="../index/index.html">简中</a><a href="../index/index.html">EN</a></div>
             </li>
           </ul>
         </nav>
         <div class="header-btn">
-          <div class="search jq-search"><span class="search-btn jq-search-open-btn">
-              <svg class="phone-hide" xmlns="http://www.w3.org/2000/svg" width="20.55" height="22.629" viewBox="0 0 20.55 22.629">
+          <form class="search jq-search"><span class="search-btn jq-search-open-btn">
+              <svg class="phone-hide gs-header-search" xmlns="http://www.w3.org/2000/svg" width="20.55" height="22.629" viewBox="0 0 20.55 22.629">
                 <g fill="none" stroke="#050a23" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5px">
                   <g stroke-linejoin="round" transform="translate(-1635 -61.027) translate(1635 61.027)">
                     <ellipse cx="10" cy="10.039" stroke="none" rx="10" ry="10.039"></ellipse>
@@ -142,24 +145,24 @@
             <div class="input-block"><span class="close-btn jq-search-close-btn"></span>
               <input type="text" placeholder="輸入想搜尋的文字"/>
             </div>
-          </div>
+          </form>
           <div class="c_hamburger jq-hamburger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
           </div>
-          <div class="language"><a class="cn" href="#">简中</a><a class="en" href="#">EN</a></div>
+          <div class="language gs-header-search"><a class="cn" href="#">简中</a><a class="en" href="#">EN</a></div>
         </div>
       </div>
     </header>
     <main class="home">
       <div class="home_wrap">
         <section class="home_banner">
-          <div class="title"><span class="slogan">
+          <div class="title gs-an1"><span class="slogan">
                Be yourself<br/>And love yourself more</span>
-            <div class="img"><img src="../../assets/images/icon/bg-logo-white.svg" alt=""/></div>
+            <div class="img"><img class="phone-hide" src="../../assets/images/icon/bg-logo-white.svg" alt=""/><img class="phone-show" src="../../assets/images/icon/home-phone-log.svg" alt=""/></div>
           </div>
-          <div class="home_slick">
+          <div class="home_slick gs-an1">
             <ul class="home_slick_list">
               <li class="home_slick_list_item"><img src="../../assets/images/home/home1.png" alt=""/></li>
               <li class="home_slick_list_item"><img src="../../assets/images/home/home3.png" alt=""/></li>
@@ -172,33 +175,17 @@
           <div class="bg-icon left"><img src="../../assets/images/icon/big-logo-line.svg" alt=""/></div>
           <div class="bg-icon right"><img src="../../assets/images/icon/big-logo-line.svg" alt=""/></div>
           <div class="home-about_wrap">
-            <div class="icon"><img class="phone-hide" src="../../assets/images/icon/logo-black.svg" alt=""/>
-              <svg class="phone-show" id="Group_79" xmlns="http://www.w3.org/2000/svg" width="74.219" height="73.784" viewBox="0 0 74.219 73.784">
-                <defs>
-                  <style>.cls-1{fill:#fff}</style>
-                </defs>
-                <path class="cls-1" id="Path_26" d="M32.731 29.446l.83 1.7.868-1.692c.013-.029.051-.093.1-.192 2.491-4.565 3.753-7.835 3.753-9.716a4.7 4.7 0 1 0-9.41 0c0 1.882 1.265 5.152 3.756 9.716.053.1.091.163.1.182m.852-12.714a2.8 2.8 0 0 1 2.82 2.818c0 .651-.291 2.632-2.816 7.485-2.525-4.853-2.816-6.834-2.816-7.485a2.8 2.8 0 0 1 2.816-2.816" transform="translate(3.535 -14.842)"></path>
-                <path class="cls-1" id="Path_27" d="M33.577 26.982a4.7 4.7 0 1 0 4.706 4.7 4.707 4.707 0 0 0-4.706-4.7m0 7.52a2.816 2.816 0 1 1 2.816-2.816 2.82 2.82 0 0 1-2.816 2.814" transform="translate(3.532 5.207)"></path>
-                <path class="cls-1" id="Path_28" d="M38.161 30.654c3.43-1.009 7.869-2.557 9.527-4.218a4.856 4.856 0 0 0 1.375-3.036 4.722 4.722 0 0 0-4.994-4.994 4.869 4.869 0 0 0-3.035 1.375c-1.329 1.332-2.747 4.535-4.215 9.524-.032.107-.051.179-.059.2l-.617 1.795 1.81-.582c.029-.011.1-.029.208-.061m4.21-9.535a2.989 2.989 0 0 1 2.047-.836 2.694 2.694 0 0 1 1.935.836 2.8 2.8 0 0 1 0 3.983c-.462.462-2.069 1.655-7.285 3.3 1.647-5.219 2.84-6.823 3.3-7.285" transform="translate(15.667 -8.909)"></path>
-                <path class="cls-1" id="Path_29" d="M21.676 26.435c1.332 1.332 4.535 2.749 9.527 4.215l.2.059 1.791.617-.585-1.807c-.008-.032-.029-.1-.061-.211-1.465-4.989-2.886-8.195-4.215-9.527a4.884 4.884 0 0 0-3.033-1.376 4.722 4.722 0 0 0-5 4.995 4.869 4.869 0 0 0 1.375 3.035m1.337-5.317a2.664 2.664 0 0 1 1.93-.836c.072 0 .144 0 .208.008a2.983 2.983 0 0 1 1.842.828c.462.459 1.655 2.066 3.3 7.282-5.216-1.647-6.823-2.84-7.282-3.3a2.969 2.969 0 0 1-.827-1.842 2.661 2.661 0 0 1 .827-2.138" transform="translate(-10.801 -8.916)"></path>
-                <path class="cls-1" id="Path_30" d="M31.338 32.534l1.7-.827-1.687-.868-.192-.1c-3.139-1.714-7.373-3.756-9.719-3.756a4.7 4.7 0 1 0 0 9.41c2.346 0 6.58-2.042 9.719-3.756l.179-.1M21.44 34.5a2.815 2.815 0 1 1 0-5.63c.651 0 2.632.291 7.485 2.814-4.853 2.524-6.834 2.816-7.485 2.816" transform="translate(-16.734 5.202)"></path>
-                <path class="cls-1" id="Path_31" d="M34.429 38.24l-.83-1.7-.868 1.692c-.016.029-.051.093-.1.19-1.714 3.139-3.756 7.373-3.756 9.719a4.7 4.7 0 1 0 9.41 0c0-1.882-1.263-5.149-3.753-9.716-.053-.1-.091-.163-.1-.182m-.852 12.714a2.8 2.8 0 0 1-2.816-2.816c0-.651.291-2.632 2.816-7.485 2.525 4.856 2.814 6.834 2.814 7.485a2.8 2.8 0 0 1-2.814 2.816" transform="translate(3.527 20.94)"></path>
-                <path class="cls-1" id="Path_32" d="M31.2 34.9c-3.433 1.009-7.869 2.557-9.53 4.218a4.877 4.877 0 0 0-1.37 3.037 4.731 4.731 0 0 0 4.645 5.005c.115 0 .232 0 .35-.013a4.855 4.855 0 0 0 3.035-1.375c1.332-1.329 2.749-4.535 4.215-9.524l.059-.2.617-1.788-1.807.582c-.032.011-.1.029-.208.061m-4.21 9.535a3.012 3.012 0 0 1-1.845.827 2.836 2.836 0 0 1-2.969-2.965 2.983 2.983 0 0 1 .828-1.842c.459-.462 2.066-1.655 7.282-3.3-1.644 5.219-2.84 6.823-3.3 7.285" transform="translate(-10.808 17.137)"></path>
-                <path class="cls-1" id="Path_33" d="M38.14 34.926l-.2-.059-1.791-.617.582 1.81c.011.029.032.1.061.208 1.009 3.43 2.557 7.869 4.218 9.527a4.863 4.863 0 0 0 3.035 1.375c.117.008.235.013.35.013a4.594 4.594 0 0 0 3.27-1.388 4.659 4.659 0 0 0 0-6.652c-1.332-1.332-4.538-2.752-9.527-4.218m8.19 9.535a2.8 2.8 0 0 1-3.983 0c-.459-.462-1.655-2.069-3.3-7.285 5.219 1.647 6.823 2.84 7.285 3.3a3 3 0 0 1 .827 1.842 2.666 2.666 0 0 1-.827 2.141" transform="translate(15.68 17.124)"></path>
-                <path class="cls-1" id="Path_34" d="M50.031 26.984c-1.885 0-5.155 1.263-9.719 3.756l-.181.1-1.7.83 1.69.868.192.1c3.139 1.714 7.373 3.756 9.719 3.756a4.7 4.7 0 0 0 0-9.41m0 7.522c-.654 0-2.635-.291-7.488-2.816 4.853-2.525 6.834-2.816 7.488-2.816a2.816 2.816 0 0 1 0 5.632" transform="translate(19.485 5.21)"></path>
-                <path class="cls-1" id="Path_35" d="M66.094 56.344a4.63 4.63 0 0 1-1 .109 4.343 4.343 0 0 1-2.979-1.162 15.755 15.755 0 0 1-3.449-4.538 12.049 12.049 0 0 0-1.618.966 17.836 17.836 0 0 0 3.777 4.943 6.443 6.443 0 0 0 10.226-2.226 6.354 6.354 0 0 0-5.351-8.793 17.182 17.182 0 0 0-8.248 1.53 15.142 15.142 0 0 1 .005-5.827A17.4 17.4 0 0 0 65.7 42.9a6.355 6.355 0 1 0-4.872-11.017 17.887 17.887 0 0 0-3.765 4.917 12.625 12.625 0 0 0 1.626.974 15.87 15.87 0 0 1 3.427-4.517 4.5 4.5 0 1 1 3.449 7.783 15.4 15.4 0 0 1-7.61-1.527 14.687 14.687 0 0 1-3.937-2.794 14.334 14.334 0 0 1-2.835-3.909 15.124 15.124 0 0 1-1.522-7.553 4.393 4.393 0 0 1 2.119-3.393 4.518 4.518 0 0 1 2.37-.672 4.659 4.659 0 0 1 1.775.355 4.412 4.412 0 0 1 2.648 3.186 4.319 4.319 0 0 1-1.062 3.943 16.265 16.265 0 0 1-4.562 3.406 12.7 12.7 0 0 0 .98 1.606 17.916 17.916 0 0 0 4.962-3.734 6.229 6.229 0 0 0 1.527-5.615 6.339 6.339 0 0 0-3.769-4.523 6.431 6.431 0 0 0-5.862.455 6.261 6.261 0 0 0-3.011 4.853A17.129 17.129 0 0 0 49.33 33.3a15.429 15.429 0 0 1-2.942.281 15.126 15.126 0 0 1-2.931-.281A16.746 16.746 0 0 0 45 25.121a6.254 6.254 0 0 0-3.011-4.853 6.425 6.425 0 0 0-5.859-.455 6.343 6.343 0 0 0-3.772 4.523 6.23 6.23 0 0 0 1.53 5.615 17.929 17.929 0 0 0 4.976 3.742 12.473 12.473 0 0 0 .982-1.612 16 16 0 0 1-4.578-3.408 4.312 4.312 0 0 1-1.068-3.944 4.406 4.406 0 0 1 2.648-3.186 4.639 4.639 0 0 1 1.775-.355 4.509 4.509 0 0 1 2.368.672 4.389 4.389 0 0 1 2.122 3.393 14.834 14.834 0 0 1-1.513 7.552 14.508 14.508 0 0 1-2.84 3.9 15 15 0 0 1-11.56 4.314 4.469 4.469 0 0 1-.526-8.833 4.594 4.594 0 0 1 1-.109 4.336 4.336 0 0 1 2.976 1.162 16.344 16.344 0 0 1 3.45 4.541 12.613 12.613 0 0 0 1.618-.969 17.841 17.841 0 0 0-3.78-4.943 6.442 6.442 0 0 0-10.228 2.223 6.353 6.353 0 0 0 5.352 8.8 17.21 17.21 0 0 0 8.251-1.527 15.129 15.129 0 0 1-.005 5.824 17.485 17.485 0 0 0-8.243-1.559 6.338 6.338 0 0 0-4.9 2.988 6.274 6.274 0 0 0-.456 5.809 6.438 6.438 0 0 0 10.224 2.223 17.84 17.84 0 0 0 3.767-4.915 12.625 12.625 0 0 0-1.626-.974 15.874 15.874 0 0 1-3.43 4.517 4.5 4.5 0 1 1-3.444-7.782 15.406 15.406 0 0 1 7.61 1.527 14.687 14.687 0 0 1 3.937 2.794 14.4 14.4 0 0 1 2.832 3.909 15.1 15.1 0 0 1 1.521 7.552 4.389 4.389 0 0 1-2.12 3.393 4.511 4.511 0 0 1-2.37.672 4.645 4.645 0 0 1-1.772-.355A4.4 4.4 0 0 1 34.19 63.8a4.312 4.312 0 0 1 1.062-3.943 16.2 16.2 0 0 1 4.559-3.406 12.2 12.2 0 0 0-.977-1.606 17.927 17.927 0 0 0-4.962 3.734 6.232 6.232 0 0 0-1.53 5.615 6.343 6.343 0 0 0 3.772 4.523 6.425 6.425 0 0 0 5.859-.455 6.264 6.264 0 0 0 3.014-4.853 17.163 17.163 0 0 0-1.554-8.177 15.43 15.43 0 0 1 2.942-.281 15.126 15.126 0 0 1 2.931.281 16.757 16.757 0 0 0-1.543 8.177 6.254 6.254 0 0 0 3.011 4.853 6.43 6.43 0 0 0 5.862.455 6.339 6.339 0 0 0 3.769-4.517 6.238 6.238 0 0 0-1.527-5.615 17.968 17.968 0 0 0-4.978-3.747 12.474 12.474 0 0 0-.982 1.612 16 16 0 0 1 4.582 3.408 4.326 4.326 0 0 1 1.061 3.942 4.4 4.4 0 0 1-2.651 3.186 4.636 4.636 0 0 1-1.772.355 4.518 4.518 0 0 1-2.37-.672 4.393 4.393 0 0 1-2.119-3.393 14.867 14.867 0 0 1 1.516-7.555 14.7 14.7 0 0 1 2.84-3.9 15.009 15.009 0 0 1 11.564-4.313 4.47 4.47 0 0 1 .526 8.833M55.718 48.1a17.208 17.208 0 0 0-5.472 5.414 17.489 17.489 0 0 0-7.744 0 16.381 16.381 0 0 0-2.424-3.025 16.871 16.871 0 0 0-3.038-2.382 16.59 16.59 0 0 0 .44-3.845 16.816 16.816 0 0 0-.435-3.834 17.142 17.142 0 0 0 3.046-2.4 16.765 16.765 0 0 0 2.424-3.011 17.5 17.5 0 0 0 7.747 0 16.27 16.27 0 0 0 2.424 3.025 16.779 16.779 0 0 0 3.038 2.382 16.958 16.958 0 0 0-.005 7.68" transform="translate(-9.271 -7.38)"></path>
-              </svg>
-            </div>
-            <h2 class="c_title-l">關於揚藝</h2>
-            <p class="txt">整形外科專科15年經驗的賴慶鴻 院長帶領，揚藝美學診所結合雷射美容、微整形、體雕塑身、美容保養及整形外科，將成為台灣第一所高規格的精品整形診所。整形外科專科15年經驗的賴慶鴻 院長帶領，揚藝美學診所結合雷射美容、微整形、體雕塑身、美容保養及整形外科，將成為台灣第一所高規格的精品整形診所。</p>
+            <div class="icon gs-an2"><img class="phone-hide" src="../../assets/images/icon/logo-black.svg" alt=""/><img class="phone-show" src="../../assets/images/icon/logo-white.svg" alt=""/></div>
+            <h2 class="c_title-l gs-an2">關於揚藝</h2>
+            <p class="txt gs-an2">整形外科專科15年經驗的賴慶鴻 院長帶領，揚藝美學診所結合雷射美容、微整形、體雕塑身、美容保養及整形外科，將成為台灣第一所高規格的精品整形診所。整形外科專科15年經驗的賴慶鴻 院長帶領，揚藝美學診所結合雷射美容、微整形、體雕塑身、美容保養及整形外科，將成為台灣第一所高規格的精品整形診所。</p>
           </div>
         </section>
         <section class="home-new">
           <div class="home-new_wrap l-container">
-            <div class="img"><img src="../../assets/images/home/home7.png" alt=""/></div>
+            <div class="img gs-an3"><img src="../../assets/images/home/home7.png" alt=""/></div>
             <div class="body">
-              <h2 class="c_title-l">最新消息</h2>
-              <ul class="list">
+              <h2 class="c_title-l gs-an4">最新消息</h2>
+              <ul class="list gs-an4">
                 <li class="list_item"><a href="#"><span class="number">01</span>
                     <p class="txt">眼周3大常見問題，帶你找回大萌眼</p></a></li>
                 <li class="list_item"><a href="#"><span class="number">02</span>
@@ -207,32 +194,32 @@
                     <p class="txt">鼻子美學研討會 | 這3種方法你一定要知道</p></a></li>
                 <li class="list_item"><a href="#"><span class="number">04</span>
                     <p class="txt">為什麼皮秒雷射會反黑？ | 這3點是關鍵</p></a></li>
-              </ul><a class="c_button-text-arrow" href="../new/new.html"><span class="txt">VIEW MORE</span><span class="arrow"></span></a>
+              </ul><a class="c_button-text-arrow gs-an5" href="../new/new.html"><span class="txt">VIEW MORE</span><span class="arrow"></span></a>
             </div>
           </div>
         </section>
         <section class="home-case">
           <div class="home-case_wrap">
-            <h2 class="c_title-l">案例分享</h2>
+            <h2 class="c_title-l gs-an6">案例分享</h2>
             <div class="content">
-              <div class="main"><a class="card" href="#">
+              <div class="main"><a class="card gs-an7" href="#">
                   <div class="card_img hover-rotate"><img src="../../assets/images/home/home2.png" alt=""/></div>
                   <div class="card_body">
                     <div class="card_title">音波拉提</div>
                     <div class="card_text">告別惱人的嘴角紋路，緊緻小 V 臉肌膚回彈術</div>
                   </div></a></div>
-              <div class="else"><a class="card" href="#">
+              <div class="else"><a class="card gs-an7" href="#">
                   <div class="card_img hover-rotate"><img src="../../assets/images/home/home5.png" alt=""/></div>
                   <div class="card_body">
                     <div class="card_title">結構式隆鼻 + 縫雙眼皮</div>
                     <div class="card_text">提升臉部比例高級感，自帶女主氣場</div>
-                  </div></a><a class="card" href="#">
+                  </div></a><a class="card gs-an7" href="#">
                   <div class="card_img hover-rotate"><img src="../../assets/images/home/home6.png" alt=""/></div>
                   <div class="card_body">
                     <div class="card_title">削骨 + 墊下巴</div>
                     <div class="card_text">去除顴骨高的老氣標籤，養成初戀側顏</div>
                   </div></a></div>
-            </div><a class="c_button-text-arrow" href="../worry/worry.html"><span class="txt">VIEW MORE</span><span class="arrow"></span></a>
+            </div><a class="c_button-text-arrow gs-an8" href="../worry/worry.html"><span class="txt">VIEW MORE</span><span class="arrow"></span></a>
           </div>
         </section>
         <section class="home-service">
@@ -240,28 +227,12 @@
             <div class="bg-icon left"><img src="../../assets/images/icon/bg-logo-white.svg" alt=""/></div>
             <div class="bg-icon right"><img src="../../assets/images/icon/bg-logo-white.svg" alt=""/></div>
             <div class="about-service_wrap">
-              <div class="brand-icon"><img class="phone-hide" src="../../assets/images/icon/logo-black.svg" alt=""/>
-                <svg class="phone-show" id="Group_79" xmlns="http://www.w3.org/2000/svg" width="74.219" height="73.784" viewBox="0 0 74.219 73.784">
-                  <defs>
-                    <style>.cls-1{fill:#fff}</style>
-                  </defs>
-                  <path class="cls-1" id="Path_26" d="M32.731 29.446l.83 1.7.868-1.692c.013-.029.051-.093.1-.192 2.491-4.565 3.753-7.835 3.753-9.716a4.7 4.7 0 1 0-9.41 0c0 1.882 1.265 5.152 3.756 9.716.053.1.091.163.1.182m.852-12.714a2.8 2.8 0 0 1 2.82 2.818c0 .651-.291 2.632-2.816 7.485-2.525-4.853-2.816-6.834-2.816-7.485a2.8 2.8 0 0 1 2.816-2.816" transform="translate(3.535 -14.842)"></path>
-                  <path class="cls-1" id="Path_27" d="M33.577 26.982a4.7 4.7 0 1 0 4.706 4.7 4.707 4.707 0 0 0-4.706-4.7m0 7.52a2.816 2.816 0 1 1 2.816-2.816 2.82 2.82 0 0 1-2.816 2.814" transform="translate(3.532 5.207)"></path>
-                  <path class="cls-1" id="Path_28" d="M38.161 30.654c3.43-1.009 7.869-2.557 9.527-4.218a4.856 4.856 0 0 0 1.375-3.036 4.722 4.722 0 0 0-4.994-4.994 4.869 4.869 0 0 0-3.035 1.375c-1.329 1.332-2.747 4.535-4.215 9.524-.032.107-.051.179-.059.2l-.617 1.795 1.81-.582c.029-.011.1-.029.208-.061m4.21-9.535a2.989 2.989 0 0 1 2.047-.836 2.694 2.694 0 0 1 1.935.836 2.8 2.8 0 0 1 0 3.983c-.462.462-2.069 1.655-7.285 3.3 1.647-5.219 2.84-6.823 3.3-7.285" transform="translate(15.667 -8.909)"></path>
-                  <path class="cls-1" id="Path_29" d="M21.676 26.435c1.332 1.332 4.535 2.749 9.527 4.215l.2.059 1.791.617-.585-1.807c-.008-.032-.029-.1-.061-.211-1.465-4.989-2.886-8.195-4.215-9.527a4.884 4.884 0 0 0-3.033-1.376 4.722 4.722 0 0 0-5 4.995 4.869 4.869 0 0 0 1.375 3.035m1.337-5.317a2.664 2.664 0 0 1 1.93-.836c.072 0 .144 0 .208.008a2.983 2.983 0 0 1 1.842.828c.462.459 1.655 2.066 3.3 7.282-5.216-1.647-6.823-2.84-7.282-3.3a2.969 2.969 0 0 1-.827-1.842 2.661 2.661 0 0 1 .827-2.138" transform="translate(-10.801 -8.916)"></path>
-                  <path class="cls-1" id="Path_30" d="M31.338 32.534l1.7-.827-1.687-.868-.192-.1c-3.139-1.714-7.373-3.756-9.719-3.756a4.7 4.7 0 1 0 0 9.41c2.346 0 6.58-2.042 9.719-3.756l.179-.1M21.44 34.5a2.815 2.815 0 1 1 0-5.63c.651 0 2.632.291 7.485 2.814-4.853 2.524-6.834 2.816-7.485 2.816" transform="translate(-16.734 5.202)"></path>
-                  <path class="cls-1" id="Path_31" d="M34.429 38.24l-.83-1.7-.868 1.692c-.016.029-.051.093-.1.19-1.714 3.139-3.756 7.373-3.756 9.719a4.7 4.7 0 1 0 9.41 0c0-1.882-1.263-5.149-3.753-9.716-.053-.1-.091-.163-.1-.182m-.852 12.714a2.8 2.8 0 0 1-2.816-2.816c0-.651.291-2.632 2.816-7.485 2.525 4.856 2.814 6.834 2.814 7.485a2.8 2.8 0 0 1-2.814 2.816" transform="translate(3.527 20.94)"></path>
-                  <path class="cls-1" id="Path_32" d="M31.2 34.9c-3.433 1.009-7.869 2.557-9.53 4.218a4.877 4.877 0 0 0-1.37 3.037 4.731 4.731 0 0 0 4.645 5.005c.115 0 .232 0 .35-.013a4.855 4.855 0 0 0 3.035-1.375c1.332-1.329 2.749-4.535 4.215-9.524l.059-.2.617-1.788-1.807.582c-.032.011-.1.029-.208.061m-4.21 9.535a3.012 3.012 0 0 1-1.845.827 2.836 2.836 0 0 1-2.969-2.965 2.983 2.983 0 0 1 .828-1.842c.459-.462 2.066-1.655 7.282-3.3-1.644 5.219-2.84 6.823-3.3 7.285" transform="translate(-10.808 17.137)"></path>
-                  <path class="cls-1" id="Path_33" d="M38.14 34.926l-.2-.059-1.791-.617.582 1.81c.011.029.032.1.061.208 1.009 3.43 2.557 7.869 4.218 9.527a4.863 4.863 0 0 0 3.035 1.375c.117.008.235.013.35.013a4.594 4.594 0 0 0 3.27-1.388 4.659 4.659 0 0 0 0-6.652c-1.332-1.332-4.538-2.752-9.527-4.218m8.19 9.535a2.8 2.8 0 0 1-3.983 0c-.459-.462-1.655-2.069-3.3-7.285 5.219 1.647 6.823 2.84 7.285 3.3a3 3 0 0 1 .827 1.842 2.666 2.666 0 0 1-.827 2.141" transform="translate(15.68 17.124)"></path>
-                  <path class="cls-1" id="Path_34" d="M50.031 26.984c-1.885 0-5.155 1.263-9.719 3.756l-.181.1-1.7.83 1.69.868.192.1c3.139 1.714 7.373 3.756 9.719 3.756a4.7 4.7 0 0 0 0-9.41m0 7.522c-.654 0-2.635-.291-7.488-2.816 4.853-2.525 6.834-2.816 7.488-2.816a2.816 2.816 0 0 1 0 5.632" transform="translate(19.485 5.21)"></path>
-                  <path class="cls-1" id="Path_35" d="M66.094 56.344a4.63 4.63 0 0 1-1 .109 4.343 4.343 0 0 1-2.979-1.162 15.755 15.755 0 0 1-3.449-4.538 12.049 12.049 0 0 0-1.618.966 17.836 17.836 0 0 0 3.777 4.943 6.443 6.443 0 0 0 10.226-2.226 6.354 6.354 0 0 0-5.351-8.793 17.182 17.182 0 0 0-8.248 1.53 15.142 15.142 0 0 1 .005-5.827A17.4 17.4 0 0 0 65.7 42.9a6.355 6.355 0 1 0-4.872-11.017 17.887 17.887 0 0 0-3.765 4.917 12.625 12.625 0 0 0 1.626.974 15.87 15.87 0 0 1 3.427-4.517 4.5 4.5 0 1 1 3.449 7.783 15.4 15.4 0 0 1-7.61-1.527 14.687 14.687 0 0 1-3.937-2.794 14.334 14.334 0 0 1-2.835-3.909 15.124 15.124 0 0 1-1.522-7.553 4.393 4.393 0 0 1 2.119-3.393 4.518 4.518 0 0 1 2.37-.672 4.659 4.659 0 0 1 1.775.355 4.412 4.412 0 0 1 2.648 3.186 4.319 4.319 0 0 1-1.062 3.943 16.265 16.265 0 0 1-4.562 3.406 12.7 12.7 0 0 0 .98 1.606 17.916 17.916 0 0 0 4.962-3.734 6.229 6.229 0 0 0 1.527-5.615 6.339 6.339 0 0 0-3.769-4.523 6.431 6.431 0 0 0-5.862.455 6.261 6.261 0 0 0-3.011 4.853A17.129 17.129 0 0 0 49.33 33.3a15.429 15.429 0 0 1-2.942.281 15.126 15.126 0 0 1-2.931-.281A16.746 16.746 0 0 0 45 25.121a6.254 6.254 0 0 0-3.011-4.853 6.425 6.425 0 0 0-5.859-.455 6.343 6.343 0 0 0-3.772 4.523 6.23 6.23 0 0 0 1.53 5.615 17.929 17.929 0 0 0 4.976 3.742 12.473 12.473 0 0 0 .982-1.612 16 16 0 0 1-4.578-3.408 4.312 4.312 0 0 1-1.068-3.944 4.406 4.406 0 0 1 2.648-3.186 4.639 4.639 0 0 1 1.775-.355 4.509 4.509 0 0 1 2.368.672 4.389 4.389 0 0 1 2.122 3.393 14.834 14.834 0 0 1-1.513 7.552 14.508 14.508 0 0 1-2.84 3.9 15 15 0 0 1-11.56 4.314 4.469 4.469 0 0 1-.526-8.833 4.594 4.594 0 0 1 1-.109 4.336 4.336 0 0 1 2.976 1.162 16.344 16.344 0 0 1 3.45 4.541 12.613 12.613 0 0 0 1.618-.969 17.841 17.841 0 0 0-3.78-4.943 6.442 6.442 0 0 0-10.228 2.223 6.353 6.353 0 0 0 5.352 8.8 17.21 17.21 0 0 0 8.251-1.527 15.129 15.129 0 0 1-.005 5.824 17.485 17.485 0 0 0-8.243-1.559 6.338 6.338 0 0 0-4.9 2.988 6.274 6.274 0 0 0-.456 5.809 6.438 6.438 0 0 0 10.224 2.223 17.84 17.84 0 0 0 3.767-4.915 12.625 12.625 0 0 0-1.626-.974 15.874 15.874 0 0 1-3.43 4.517 4.5 4.5 0 1 1-3.444-7.782 15.406 15.406 0 0 1 7.61 1.527 14.687 14.687 0 0 1 3.937 2.794 14.4 14.4 0 0 1 2.832 3.909 15.1 15.1 0 0 1 1.521 7.552 4.389 4.389 0 0 1-2.12 3.393 4.511 4.511 0 0 1-2.37.672 4.645 4.645 0 0 1-1.772-.355A4.4 4.4 0 0 1 34.19 63.8a4.312 4.312 0 0 1 1.062-3.943 16.2 16.2 0 0 1 4.559-3.406 12.2 12.2 0 0 0-.977-1.606 17.927 17.927 0 0 0-4.962 3.734 6.232 6.232 0 0 0-1.53 5.615 6.343 6.343 0 0 0 3.772 4.523 6.425 6.425 0 0 0 5.859-.455 6.264 6.264 0 0 0 3.014-4.853 17.163 17.163 0 0 0-1.554-8.177 15.43 15.43 0 0 1 2.942-.281 15.126 15.126 0 0 1 2.931.281 16.757 16.757 0 0 0-1.543 8.177 6.254 6.254 0 0 0 3.011 4.853 6.43 6.43 0 0 0 5.862.455 6.339 6.339 0 0 0 3.769-4.517 6.238 6.238 0 0 0-1.527-5.615 17.968 17.968 0 0 0-4.978-3.747 12.474 12.474 0 0 0-.982 1.612 16 16 0 0 1 4.582 3.408 4.326 4.326 0 0 1 1.061 3.942 4.4 4.4 0 0 1-2.651 3.186 4.636 4.636 0 0 1-1.772.355 4.518 4.518 0 0 1-2.37-.672 4.393 4.393 0 0 1-2.119-3.393 14.867 14.867 0 0 1 1.516-7.555 14.7 14.7 0 0 1 2.84-3.9 15.009 15.009 0 0 1 11.564-4.313 4.47 4.47 0 0 1 .526 8.833M55.718 48.1a17.208 17.208 0 0 0-5.472 5.414 17.489 17.489 0 0 0-7.744 0 16.381 16.381 0 0 0-2.424-3.025 16.871 16.871 0 0 0-3.038-2.382 16.59 16.59 0 0 0 .44-3.845 16.816 16.816 0 0 0-.435-3.834 17.142 17.142 0 0 0 3.046-2.4 16.765 16.765 0 0 0 2.424-3.011 17.5 17.5 0 0 0 7.747 0 16.27 16.27 0 0 0 2.424 3.025 16.779 16.779 0 0 0 3.038 2.382 16.958 16.958 0 0 0-.005 7.68" transform="translate(-9.271 -7.38)"></path>
-                </svg>
-              </div>
-              <h3 class="c_title-l">服務項目</h3>
+              <div class="brand-icon gs-an9"><img class="phone-hide" src="../../assets/images/icon/logo-black.svg" alt=""/><img class="phone-show" src="../../assets/images/icon/logo-white.svg" alt=""/></div>
+              <h3 class="c_title-l gs-an9">服務項目</h3>
               <div class="about-service-menu">
                 <ul class="about-service-menu_list">
-                  <li class="about-service-menu_list_item">
-                    <div class="img"><img class="phone-hide" src="../../assets/images/icon/service1.svg" alt=""/><img class="phone-show" src="../../assets/images/about/1.png" alt=""/></div>
+                  <li class="about-service-menu_list_item gs-an9">
+                    <div class="img"><img class="phone-hide" src="../../assets/images/icon/service1.svg" alt=""/><img class="phone-show" src="../../assets/images/icon/service1-mob.svg" alt=""/></div>
                     <div class="body">
                       <h3 class="u_flex">
                         <div class="c_title-m">雷射光療</div>
@@ -270,8 +241,8 @@
                       <p class="txt">雷射是一種光能，用光影製出名為你的作品</p>
                     </div>
                   </li>
-                  <li class="about-service-menu_list_item">
-                    <div class="img"><img class="phone-hide" src="../../assets/images/icon/service2.svg" alt=""/><img class="phone-show" src="../../assets/images/about/2.png" alt=""/></div>
+                  <li class="about-service-menu_list_item gs-an9">
+                    <div class="img"><img class="phone-hide" src="../../assets/images/icon/service2.svg" alt=""/><img class="phone-show" src="../../assets/images/icon/service2-mob.svg" alt=""/></div>
                     <div class="body">
                       <h3 class="u_flex">
                         <div class="c_title-m">整形外科</div>
@@ -280,8 +251,8 @@
                       <p class="txt">美麗的本質，由揚藝替您來實現</p>
                     </div>
                   </li>
-                  <li class="about-service-menu_list_item">
-                    <div class="img"><img class="phone-hide" src="../../assets/images/icon/service3.svg" alt=""/><img class="phone-show" src="../../assets/images/about/3.png" alt=""/></div>
+                  <li class="about-service-menu_list_item gs-an9">
+                    <div class="img"><img class="phone-hide" src="../../assets/images/icon/service3.svg" alt=""/><img class="phone-show" src="../../assets/images/icon/service3-mob.svg" alt=""/></div>
                     <div class="body">
                       <h3 class="u_flex">
                         <div class="c_title-m">微整形</div>
@@ -290,8 +261,8 @@
                       <p class="txt">美麗可塑，展現無拘束</p>
                     </div>
                   </li>
-                  <li class="about-service-menu_list_item">
-                    <div class="img"><img class="phone-hide" src="../../assets/images/icon/service4.svg" alt=""/><img class="phone-show" src="../../assets/images/about/4.png" alt=""/></div>
+                  <li class="about-service-menu_list_item gs-an9">
+                    <div class="img"><img class="phone-hide" src="../../assets/images/icon/service4.svg" alt=""/><img class="phone-show" src="../../assets/images/icon/service4-mob.svg" alt=""/></div>
                     <div class="body">
                       <h3 class="u_flex">
                         <div class="c_title-m">體雕塑身</div>
@@ -300,8 +271,8 @@
                       <p class="txt">還你美麗雕塑美學，細品藝術思維的文本</p>
                     </div>
                   </li>
-                  <li class="about-service-menu_list_item">
-                    <div class="img"><img class="phone-hide" src="../../assets/images/icon/service5.svg" alt=""/><img class="phone-show" src="../../assets/images/about/5.png" alt=""/></div>
+                  <li class="about-service-menu_list_item gs-an9">
+                    <div class="img"><img class="phone-hide" src="../../assets/images/icon/service5.svg" alt=""/><img class="phone-show" src="../../assets/images/icon/service5-mob.svg" alt=""/></div>
                     <div class="body">
                       <h3 class="u_flex">
                         <div class="c_title-m">眼部整形</div>
@@ -398,8 +369,11 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="../../assets/javascripts/all.js"></script>
   </body>
 </html>

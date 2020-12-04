@@ -4,18 +4,15 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&amp;family=Noto+Sans+TC:wght@300&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&amp;family=Noto+Serif+TC:wght@500;600&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&amp;family=Noto+Sans+TC:wght@300&amp;family=Noto+Serif+TC:wght@300;400&amp;display=swap"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&amp;family=Noto+Serif+TC:wght@400;500;600&amp;family=Noto+Sans+TC:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="../../assets/stylesheets/all.css"/>
   </head>
-  <body>
+  <body id="new">
+    <div class="an-progress"><span class="an-progress-bar"></span><span class="an-progress-text">0</span></div>
     <header class="header jq-header">
       <div class="header_wrap">
-        <h1 class="header-logo"><a href="../index/index.html"> 
+        <h1 class="header-logo gs-header-logo"><a href="../index/index.html"> 
             <picture class="phone-hide">
               <source srcset="../../assets/images/icon/mob-logo.svg" media="(max-width: 768px)"/><img src="../../assets/images/icon/text-logo.svg" alt="揚藝美學診所"/>
             </picture>
@@ -110,18 +107,24 @@
             </svg></a></h1>
         <nav class="header-nav jq-header-nav">
           <ul class="header-nav-list">
-            <li class="header-nav-list_item"><a href="../new/new.html">最新消息</a></li>
-            <li class="header-nav-list_item"><a href="../about/about.html">關於揚藝</a></li>
-            <li class="header-nav-list_item"><a href="../worry/worry.html">我的煩惱</a></li>
-            <li class="header-nav-list_item"><a href="../advisory/advisory.html">諮詢流程</a></li>
+            <li class="header-nav-list_item pad-show"><a class="c_hamburger-rwd" href="#">
+                <div class="c_hamburger jq-hamburger">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+                </div></a></li>
+            <li class="header-nav-list_item gs-header_nav-item jq-header-news"><a href="../new/new.html">最新消息</a></li>
+            <li class="header-nav-list_item gs-header_nav-item jq-header-about"><a href="../about/about.html">關於揚藝</a></li>
+            <li class="header-nav-list_item gs-header_nav-item jq-header-worry"><a href="../worry/worry.html">我的煩惱</a></li>
+            <li class="header-nav-list_item gs-header_nav-item jq-header-advisory"><a href="../advisory/advisory.html">諮詢流程</a></li>
             <li class="header-nav-list_item rwd-language"><span>語言 :</span>
               <div class="language"><a class="current" href="../index/index.html">繁中</a><a href="../index/index.html">简中</a><a href="../index/index.html">EN</a></div>
             </li>
           </ul>
         </nav>
         <div class="header-btn">
-          <div class="search jq-search"><span class="search-btn jq-search-open-btn">
-              <svg class="phone-hide" xmlns="http://www.w3.org/2000/svg" width="20.55" height="22.629" viewBox="0 0 20.55 22.629">
+          <form class="search jq-search"><span class="search-btn jq-search-open-btn">
+              <svg class="phone-hide gs-header-search" xmlns="http://www.w3.org/2000/svg" width="20.55" height="22.629" viewBox="0 0 20.55 22.629">
                 <g fill="none" stroke="#050a23" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5px">
                   <g stroke-linejoin="round" transform="translate(-1635 -61.027) translate(1635 61.027)">
                     <ellipse cx="10" cy="10.039" stroke="none" rx="10" ry="10.039"></ellipse>
@@ -142,19 +145,19 @@
             <div class="input-block"><span class="close-btn jq-search-close-btn"></span>
               <input type="text" placeholder="輸入想搜尋的文字"/>
             </div>
-          </div>
+          </form>
           <div class="c_hamburger jq-hamburger">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
           </div>
-          <div class="language"><a class="cn" href="#">简中</a><a class="en" href="#">EN</a></div>
+          <div class="language gs-header-search"><a class="cn" href="#">简中</a><a class="en" href="#">EN</a></div>
         </div>
       </div>
     </header>
     <main class="new">
       <div class="new_wrap">
-        <section class="c_banner">
+        <section class="c_banner gs-c_banner">
           <picture>
             <source srcset="../../assets/images/new/new5.png" media="(max-width: 768px)"/><img src="../../assets/images/new/new5.png" alt="My default image"/>
           </picture>
@@ -163,10 +166,10 @@
         </section>
         <section class="new-school">
           <div class="new-school_wrap l-container">
-            <h2 class="c_title-l">揚藝美力學堂</h2>
+            <h2 class="c_title-l gs-an1">揚藝美力學堂</h2>
             <div class="main-article"><a class="c_card" href="../details/details.html">
-                <div class="c_card_img"><img src="../../assets/images/new/new1.png" alt=""/></div>
-                <div class="c_card_body">
+                <div class="c_card_img hover-rotate gs-an2"><img src="../../assets/images/new/new1.png" alt=""/></div>
+                <div class="c_card_body gs-an3">
                   <h3 class="c_card_title">想脫單？雙眼皮到底要縫還是要割？</h3>
                   <div class="u_flex">
                     <time class="time">2020-2-25</time>
@@ -178,8 +181,8 @@
                 </div></a></div>
             <div class="menu">
               <ul class="menu-list">
-                <li class="menu-list_item"><a class="c_card" href="../details/details.html">
-                    <div class="c_card_img"><img src="../../assets/images/new/new2.png" alt=""/></div>
+                <li class="menu-list_item gs-an4"><a class="c_card" href="../details/details.html">
+                    <div class="c_card_img hover-rotate"><img src="../../assets/images/new/new2.png" alt=""/></div>
                     <div class="c_card_body">
                       <h3 class="c_card_title">眼周3大常見問題，帶你找回大萌眼 | 怎麼對症下藥</h3>
                       <div class="u_flex">
@@ -187,8 +190,8 @@
                         <p class="name">賴慶鴻醫師  </p>
                       </div>
                     </div></a></li>
-                <li class="menu-list_item"><a class="c_card" href="../details/details.html">
-                    <div class="c_card_img"><img src="../../assets/images/new/new3.png" alt=""/></div>
+                <li class="menu-list_item gs-an4"><a class="c_card" href="../details/details.html">
+                    <div class="c_card_img hover-rotate"><img src="../../assets/images/new/new3.png" alt=""/></div>
                     <div class="c_card_body">
                       <h3 class="c_card_title">鼻子美學研討會 | 這3種方法你一定要知道</h3>
                       <div class="u_flex">
@@ -196,8 +199,8 @@
                         <p class="name">賴慶鴻醫師</p>
                       </div>
                     </div></a></li>
-                <li class="menu-list_item"><a class="c_card" href="../details/details.html">
-                    <div class="c_card_img"><img src="../../assets/images/new/new8.png" alt=""/></div>
+                <li class="menu-list_item gs-an4"><a class="c_card" href="../details/details.html">
+                    <div class="c_card_img hover-rotate"><img src="../../assets/images/new/new8.png" alt=""/></div>
                     <div class="c_card_body">
                       <h3 class="c_card_title">為什麼皮秒雷射會反黑？這3點是關鍵</h3>
                       <div class="u_flex">
@@ -211,11 +214,11 @@
         </section>
         <section class="new-article">
           <div class="new-article_wrap l-container">
-            <h2 class="c_title-l">全部文章</h2>
+            <h2 class="c_title-l gs-an5">全部文章</h2>
             <div class="menu">
               <ul class="menu-list">
-                <li class="menu-list_item"><a class="c_card" href="../details/details.html">
-                    <div class="c_card_img"><img src="../../assets/images/new/new6.png" alt=""/></div>
+                <li class="menu-list_item gs-an6"><a class="c_card" href="../details/details.html">
+                    <div class="c_card_img hover-rotate"><img src="../../assets/images/new/new6.png" alt=""/></div>
                     <div class="c_card_body">
                       <h3 class="c_card_title">選擇面部膠原蛋白 | 這4點你一定要知道</h3>
                       <div class="u_flex">
@@ -223,8 +226,8 @@
                         <p class="name">賴慶鴻醫師  </p>
                       </div>
                     </div></a></li>
-                <li class="menu-list_item"><a class="c_card" href="../details/details.html">
-                    <div class="c_card_img"><img src="../../assets/images/new/new11.png" alt=""/></div>
+                <li class="menu-list_item gs-an6"><a class="c_card" href="../details/details.html">
+                    <div class="c_card_img hover-rotate"><img src="../../assets/images/new/new11.png" alt=""/></div>
                     <div class="c_card_body">
                       <h3 class="c_card_title">找回緊緻小V臉，就靠它們了</h3>
                       <div class="u_flex">
@@ -232,8 +235,8 @@
                         <p class="name">賴慶鴻醫師</p>
                       </div>
                     </div></a></li>
-                <li class="menu-list_item"><a class="c_card" href="../details/details.html">
-                    <div class="c_card_img"><img src="../../assets/images/new/new4.png" alt=""/></div>
+                <li class="menu-list_item gs-an6"><a class="c_card" href="../details/details.html">
+                    <div class="c_card_img hover-rotate"><img src="../../assets/images/new/new4.png" alt=""/></div>
                     <div class="c_card_body">
                       <h3 class="c_card_title">你了解自己的下巴煩惱嗎？小編解析給你聽！！</h3>
                       <div class="u_flex">
@@ -241,8 +244,8 @@
                         <p class="name">賴慶鴻醫師</p>
                       </div>
                     </div></a></li>
-                <li class="menu-list_item"><a class="c_card" href="../details/details.html">
-                    <div class="c_card_img"><img src="../../assets/images/new/new9.png" alt=""/></div>
+                <li class="menu-list_item gs-an6"><a class="c_card" href="../details/details.html">
+                    <div class="c_card_img hover-rotate"><img src="../../assets/images/new/new9.png" alt=""/></div>
                     <div class="c_card_body">
                       <h3 class="c_card_title">改善疲態雙眼，就靠這3招</h3>
                       <div class="u_flex">
@@ -250,8 +253,8 @@
                         <p class="name">賴慶鴻醫師</p>
                       </div>
                     </div></a></li>
-                <li class="menu-list_item"><a class="c_card" href="../details/details.html">
-                    <div class="c_card_img"><img src="../../assets/images/new/new7.png" alt=""/></div>
+                <li class="menu-list_item gs-an6"><a class="c_card" href="../details/details.html">
+                    <div class="c_card_img hover-rotate"><img src="../../assets/images/new/new7.png" alt=""/></div>
                     <div class="c_card_body">
                       <h3 class="c_card_title">美的藝術不該僅是模仿 | 您的美 · 獨樹一格​</h3>
                       <div class="u_flex">
@@ -259,8 +262,8 @@
                         <p class="name">賴慶鴻醫師</p>
                       </div>
                     </div></a></li>
-                <li class="menu-list_item"><a class="c_card" href="../details/details.html">
-                    <div class="c_card_img"><img src="../../assets/images/new/new10.png" alt=""/></div>
+                <li class="menu-list_item gs-an6"><a class="c_card" href="../details/details.html">
+                    <div class="c_card_img hover-rotate"><img src="../../assets/images/new/new10.png" alt=""/></div>
                     <div class="c_card_body">
                       <h3 class="c_card_title">端午來到也不向「大粽臉」妥協</h3>
                       <div class="u_flex">
@@ -360,8 +363,11 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="../../assets/javascripts/all.js"></script>
   </body>
 </html>
