@@ -1,15 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
-    <defs>
-        <style>
-            .cls-2{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round}
-        </style>
-    </defs>
-    <g id="Group_282" transform="translate(-315 -372)">
-        <circle id="Ellipse_64" cx="22" cy="22" r="22" fill="#1c1c1c" transform="translate(315 372)"/>
-        <g id="Group_281" transform="translate(-714.627 -847.883)">
-            <path id="Path_79" d="M3033.627 4305.188l3.94-3.044 3.942 3.044" class="cls-2" transform="translate(-1986.175 -3069.261)"/>
-            <path id="Path_80" fill="none" stroke="#fff" stroke-linecap="round" d="M3057 4301.534v12.772" transform="translate(-2005.607 -3068.217)"/>
-            <path id="Path_81" d="M3036.813 4342.435h-3.186v10.588h15.529v-10.588h-3" class="cls-2" transform="translate(-1990 -3103.089)"/>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44"><defs><style>.cls-2{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round}</style></defs><g id="Group_282" transform="translate(-315 -372)"><circle id="Ellipse_64" cx="22" cy="22" r="22" fill="#1c1c1c" transform="translate(315 372)"/><g id="Group_281" transform="translate(-714.627 -847.883)"><path id="Path_79" d="M3033.627 4305.188l3.94-3.044 3.942 3.044" class="cls-2" transform="translate(-1986.175 -3069.261)"/><path id="Path_80" fill="none" stroke="#fff" stroke-linecap="round" d="M3057 4301.534v12.772" transform="translate(-2005.607 -3068.217)"/><path id="Path_81" d="M3036.813 4342.435h-3.186v10.588h15.529v-10.588h-3" class="cls-2" transform="translate(-1990 -3103.089)"/></g></g></svg>
